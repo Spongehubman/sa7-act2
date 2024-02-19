@@ -8,23 +8,12 @@ numbers.each do |x|
     puts x * 2
 end
 
+# Procs are created very similarly to method instances.
+triple = Proc.new { |x| x * 3}
+p numbers.map(&triple)
 
 
-# Unused comment code is found here
-def triple(n)
+#puts triple(numbers)
 
-    n.map do |x|
-        x * 3
-    end
-
-    puts n
-end
-
-
-puts triple(numbers)
-
-#numbers.each do |x|
-#    numbers.map(x * 3)
-#end
 
 #puts numbers
