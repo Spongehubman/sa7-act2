@@ -11,10 +11,13 @@ end
 
 
 # Unused comment code is found here
-def triple(x)
+def triple(n)
 
-    x.map
+    n.map do |x|
+        x * 3
+    end
 
+    puts n
 end
 
 
