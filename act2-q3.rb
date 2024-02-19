@@ -2,16 +2,23 @@
 
 # This program is built for handling exceptions.
 
+#def new_error()
+#    raise ZeroDivisionError, "Error: Division by zero is not allowed." if y == 0
+#end
+
 def safe_divide(x, y)
-    raise ZeroDivisionError, "Error: Division by zero is not allowed."
+    #raise ZeroDivisionError, "Error: Division by zero is not allowed." if y == 0
 
     begin
 
-        return x / y
+        quotient = x / y
+        return quotient
 
     rescue ZeroDivisionError => e
-        puts "#{e}"
+        puts "#{"Error: Division by zero is not allowed."}"
 
+    #ensure
+        #return quotient
     end
 end
 
