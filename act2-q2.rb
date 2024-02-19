@@ -8,10 +8,20 @@ numbers.each do |x|
     puts x * 2
 end
 
-triple = Proc.new {|x| x * 3}
-puts numbers.map(&triple)
+
+
+# Unused comment code is found here
+def triple(x)
+
+    x.map
+
+end
+
+
+puts triple(numbers)
 
 #numbers.each do |x|
 #    numbers.map(x * 3)
 #end
-puts numbers
+
+#puts numbers
