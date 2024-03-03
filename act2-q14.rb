@@ -5,9 +5,9 @@
 example_array = ["Ruby", "is", "awesome"]
 
 
-#example_array.each do |x|
 
-num_array = example_array.map(x.length)
-#end
+string_length = Proc.new{ |x| x.length}
+p example_array.map(&string_length)
 
-print(num_array)
+
+#puts num_array 
