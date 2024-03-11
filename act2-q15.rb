@@ -1,14 +1,15 @@
 
 # This program is built for handling exceptions.
 
-def safe_divide(x, y)
+def divide_numbers(dividend, divisor)
     begin
 
-        puts x / y
+        puts dividend / divisor
 
-    rescue
-        puts "Zero Division Error: #{e}"
-
+    rescue ZeroDivisionError => e
+        puts "Cannot divide by zero!"
     end
-    
 end
+
+divide_numbers(10, 2)
+divide_numbers(10, 0)
