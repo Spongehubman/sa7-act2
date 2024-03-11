@@ -3,12 +3,7 @@
 # converts the text into generated HTML code.
 
 
-def tag(x, my_string)
-    :p1
-
-
-end
-
+#tag = lambda {}
 
 puts tag :p, "This is a paragraph."
 puts tag :h1, "This is a header."
